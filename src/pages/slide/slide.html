@@ -1,0 +1,30 @@
+<!--
+  Generated template for the Slide page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title *ngIf="sItem">
+        {{sItem.title}}
+        <ion-icon [name]="sItem.icon"></ion-icon>
+    </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-slides>
+        <ion-slide>
+          <ion-img width="500px" height="500px" src="../assets/images/img_1.jpg"><p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio nostrum iure laboriosam
+               obcaecati iusto provident aspernatur qui, blanditiis! Placeat architecto alias ducimus voluptatem
+                quos iusto similique, exercitationem iste. Maiores, nulla!
+            </p></ion-img>
+            
+        </ion-slide>
+    </ion-slides>
+</ion-content>
