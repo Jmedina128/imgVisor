@@ -18,9 +18,8 @@
 
 <ion-content padding>
     <ion-slides>
-        <ion-slide>
-          <ion-img width="500px" height="300px" [src]="sItem.image"></ion-img>
-
+        <ion-slide *ngFor="let i of sItem.image">
+          <ion-img width="500px" height="300px" [src]="i"></ion-img>
           <p>
               {{sItem.description}}
           </p>
