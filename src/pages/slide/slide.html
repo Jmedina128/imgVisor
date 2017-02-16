@@ -19,12 +19,10 @@
 <ion-content padding>
     <ion-slides>
         <ion-slide>
-          <ion-img width="500px" height="500px" src="../assets/images/img_1.jpg"></ion-img>
+          <ion-img width="500px" height="300px" [src]="sItem.image"></ion-img>
 
           <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio nostrum iure laboriosam
-               obcaecati iusto provident aspernatur qui, blanditiis! Placeat architecto alias ducimus voluptatem
-                quos iusto similique, exercitationem iste. Maiores, nulla!
+              {{sItem.description}}
           </p>
         </ion-slide>
     </ion-slides>

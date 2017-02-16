@@ -13,7 +13,7 @@ export class Galeria {
   selectedItem: any;
   icons: string[];
   titles = [];
-  items: Array<{title: string, icon: string}>;
+  items: Array<{title: string, icon: string, image : string, description : string}>;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     // If we navigated to this page, we will have an item available as a nav param
@@ -29,7 +29,9 @@ export class Galeria {
     for (let i = 1; i < 13; i++) {
       this.items.push({
         title: this.titles[Math.floor(Math.random() * this.titles.length)],
-        icon: this.icons[Math.floor(Math.random() * this.icons.length)]
+        icon: this.icons[Math.floor(Math.random() * this.icons.length)],
+        image : "../assets/images/img_2.jpg",
+        description : "lorem  ipsum bla bla bla"
       });
     }
   }
@@ -40,11 +42,4 @@ export class Galeria {
       item: item
     });
   }
-}
-
-class Images{
-
-    names = [];
-
-
 }
