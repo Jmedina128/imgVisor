@@ -7,12 +7,15 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class SlidePage {
 
-  sItem: any;
-  //items: Array<{title: string, note: string, icon: string}>;
+  images : any;
+  icon : string;
+  title : string;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   
-  this.sItem = navParams.get('item');
+  this.images = navParams.get('images');
+  this.title = navParams.get('title');
+  this.icon = navParams.get('icon');
   
   }
 

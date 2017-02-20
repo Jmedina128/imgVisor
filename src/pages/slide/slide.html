@@ -7,21 +7,21 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title *ngIf="sItem">
-        {{sItem.title}}
-        <ion-icon [name]="sItem.icon"></ion-icon>
+    <ion-title *ngIf="title">
+        {{title}}
+        <ion-icon [name]="icon"></ion-icon>
     </ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content padding *ngIf="images">
     <ion-slides>
-        <ion-slide *ngFor="let i of sItem.image">
-          <ion-img width="500px" height="300px" [src]="i"></ion-img>
+        <ion-slide *ngFor="let i of images">
+          <ion-img style="width: 100%" [src]="i.files"></ion-img>
           <p>
-              {{sItem.description}}
+              {{i.descriptions}}
           </p>
         </ion-slide>
     </ion-slides>

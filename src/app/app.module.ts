@@ -5,6 +5,7 @@ import { Login } from '../pages/login/login';
 import { Galeria } from '../pages/galeria/galeria';
 import { About } from '../pages/about/about';
 import { SlidePage } from '../pages/slide/slide';
+import { Albumprovider } from '../providers/albumprovider';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,6 @@ import { SlidePage } from '../pages/slide/slide';
     About,
     SlidePage
   ],
-  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
+  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}, Albumprovider]
 })
 export class AppModule {}
